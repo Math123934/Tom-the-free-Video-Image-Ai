@@ -1,0 +1,31 @@
+<!DOCTYPE html><html><head> <style> html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow-y: auto; background-color: #000; } body { position: relative; min-height: 250vh; }
+
+iframe { width: 100%; height: 250vh; border: none; display: block; z-index: 1; } .obstruction-box { position: absolute; background-color: #000000; z-index: 1000; pointer-events: auto; opacity: 1; visibility: visible; }
+
+/* --- TOP CENTER BOX --- */ .top-center { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); width: 1300px; height: 85px; display: flex; align-items: center; justify-content: flex-start; padding-left: 40px; box-sizing: border-box; }
+
+.glowing-text { color: #ffffff; font-family: Arial, sans-serif; font-size: 32px; font-weight: bold; letter-spacing: 1px; animation: textGlow 2s ease-in-out infinite alternate; }
+
+@keyframes textGlow { from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00d4ff; } to { text-shadow: 0 0 10px #fff, 0 0 20px #00d4ff, 0 0 30px #00d4ff; } }
+
+/* --- BOTTOM ERROR BOX --- */ .bottom-center { bottom: 0; left: 50%; transform: translateX(-50%); width: 1300px; height: 85px; display: flex; align-items: center; justify-content: center; /* Center the error message */ }
+
+.error-text { color: #ff4d4d; /* Red color for error */ font-family: Arial, sans-serif; font-size: 24px; font-weight: bold; text-transform: uppercase; animation: errorGlow 1.5s ease-in-out infinite alternate; }
+
+@keyframes errorGlow { from { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; } to { text-shadow: 0 0 15px #ff0000, 0 0 25px #ff4d4d; } }
+
+/* --- TOP RIGHT BOX --- */ .top-right { top: 0px; right: 0px; width: 500px; height: 110px; background-color: #0F0F11; }
+
+/* --- FIXED BACK BUTTON --- */ .back-button { position: absolute; top: 25px; right: 25px; z-index: 999999; padding: 15px 25px; background-color: #000; color: #fff; text-decoration: none; font-family: Arial, sans-serif; font-weight: bold; font-size: 16px; border: 2px solid #00d4ff; border-radius: 8px; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(0, 212, 255, 0.8); display: inline-block; }
+
+.back-button:hover { background-color: #00d4ff; color: #000; box-shadow: 0 0 35px #00d4ff; } </style></head><body>
+
+<div class="obstruction-box top-center"> <span class="glowing-text">Tom the Video/Image Ai</span> </div>
+
+<div class="obstruction-box bottom-center"> <span class="error-text">"Error" means you have used all of daily credit</span> </div>
+
+<div class="obstruction-box top-right"></div> <iframe src="https://luca115-wan2-2-5b-fast-t2v-i2v-t2i.hf.space/?__theme=dark" frameborder="0" scrolling="yes" ></iframe>
+
+<a href="https://math12393.github.io/TOM-The-AI-Wen/" class="back-button">Go back to Tom the Ai</a>
+
+</body></html>
